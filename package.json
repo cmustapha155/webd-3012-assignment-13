@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "format": "prettier --write --parser typescript 'src/**/*.{ts,tsx}'",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
