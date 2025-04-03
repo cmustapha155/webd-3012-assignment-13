@@ -6,12 +6,17 @@ const StyledButton = styled.button<ButtonProps>`
 	font-size: 1em;
 	font-family: sans-serif;
 	padding: 10px 35px 10px 35px;
+	line-height: 1;
 
 	background-color: white;
 	border: 1.5px solid lightgrey;
 	border-radius: 3px;
 
 	transition: 200ms;
+
+	@media (max-width: 768px) {
+		padding: 5px 17.5px 5px 17.5px;
+	}
 
 	&:hover {
 		background-color: ${(props) =>

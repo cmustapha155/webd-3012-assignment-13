@@ -8,6 +8,10 @@ const StyledLabel = styled.label<LabelProps>`
 	color: ${(props) =>
 		props.disabled ? "lightgrey" : props.textColor || "#3284ad"};
 	padding: 10px 10px 10px 10px;
+
+	@media (max-width: 768px) {
+    padding: 5px 5px 5px 5px;
+}
 `;
 
 const Label: React.FC<LabelProps> = (props) => {
