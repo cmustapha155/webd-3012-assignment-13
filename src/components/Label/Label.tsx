@@ -6,12 +6,14 @@ const StyledLabel = styled.label<LabelProps>`
 	font-size: 1em;
 	font-family: sans-serif;
 	color: ${(props) =>
-		props.disabled ? "lightgrey" : props.textColor || "#3284ad"};
-	padding: 10px 10px 10px 10px;
+		props.disabled ? "grey" : props.textColor || "#3284ad"};
+	${(props) => props.disabled && `background-color: lightgrey;`}
+
+	padding: 10px;
 
 	@media (max-width: 768px) {
-    padding: 5px 5px 5px 5px;
-}
+		padding: 5px;
+	}
 `;
 
 const Label: React.FC<LabelProps> = (props) => {
