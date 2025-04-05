@@ -77,4 +77,3 @@ export const UnusedCells: Story = {
 		disabled: false,
 	},
 };
-

@@ -8,7 +8,7 @@ describe(Text, () => {
 	test("Table component renders and is visible", () => {
 		render(<Table heading1="Heading 1" />);
 
-    const table = screen.getByRole("table");
+		const table = screen.getByRole("table");
 		expect(table).toBeInTheDocument();
 		expect(table).toBeVisible();
 	});

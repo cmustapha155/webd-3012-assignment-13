@@ -16,28 +16,28 @@ const StyledDropdown = styled.select<DropdownProps>`
 	}
 
 	&:hover {
-    cursor: ${(props) => !props.disabled && "pointer"};
-  }
+		cursor: ${(props) => !props.disabled && "pointer"};
+	}
 `;
 
 const Dropdown: React.FC<DropdownProps> = (props) => {
-  return (
-    <StyledDropdown
-      name = {props.name}
-      option1 = {props.option1}
-      option2 = {props.option2}
-      option3 = {props.option3}
-      value1 = {props.value1}
-      value2 = {props.value2}
-      value3 = {props.value3}
-      id = {props.id}
-      disabled = {props.disabled}
-    >
-      <option value = {props.value1}>{props.option1}</option>
-      <option value = {props.value2}>{props.option2}</option>
-      <option value = {props.value3}>{props.option3}</option>
-    </StyledDropdown>
-  );
+	return (
+		<StyledDropdown
+			name={props.name}
+			option1={props.option1}
+			option2={props.option2}
+			option3={props.option3}
+			value1={props.value1}
+			value2={props.value2}
+			value3={props.value3}
+			id={props.id}
+			disabled={props.disabled}
+		>
+			<option value={props.value1}>{props.option1}</option>
+			<option value={props.value2}>{props.option2}</option>
+			<option value={props.value3}>{props.option3}</option>
+		</StyledDropdown>
+	);
 };
 
 export default Dropdown;

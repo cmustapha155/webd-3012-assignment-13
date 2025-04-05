@@ -15,7 +15,14 @@ describe(Dropdown, () => {
 
 	// test 2
 	test("Dropdown styling changes in disabled state", () => {
-		render(<Dropdown name="car-make" option1="Toyota" value1="toyota" disabled={true} />);
+		render(
+			<Dropdown
+				name="car-make"
+				option1="Toyota"
+				value1="toyota"
+				disabled={true}
+			/>,
+		);
 
 		const dropdown = screen.getByRole("combobox");
 		expect(dropdown).toBeDisabled();

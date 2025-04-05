@@ -6,14 +6,17 @@ const StyledTable = styled.table<TableProps>`
 	font-size: 1em;
 	font-family: sans-serif;
 
-	color: ${(props) =>
-		props.disabled ? "grey" : "inherit"};
+	color: ${(props) => (props.disabled ? "grey" : "inherit")};
 	${(props) => props.disabled && `background-color: lightgrey;`}
 
 	thead {
-	background-color: ${(props) => props.disabled? "lightgrey" : props.headingBackgroundColor || "#d7d7d7"}
+		background-color: ${(props) =>
+			props.disabled
+				? "lightgrey"
+				: props.headingBackgroundColor || "#d7d7d7"};
 	}
-	td, th {
+	td,
+	th {
 		padding: 10px;
 		border: 2px solid black;
 	}
