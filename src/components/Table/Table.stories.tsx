@@ -34,7 +34,6 @@ export const Primary: Story = {
 		footer2: "Data 2",
 		footer3: "Data 3",
 
-		headingBackgroundColor: "#dbe3ea",
 		className: "simple-table",
 		id: "",
 		disabled: false,

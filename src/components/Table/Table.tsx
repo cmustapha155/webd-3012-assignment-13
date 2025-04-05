@@ -9,20 +9,34 @@ const StyledTable = styled.table<TableProps>`
 	color: ${(props) => (props.disabled ? "grey" : "inherit")};
 	${(props) => props.disabled && `background-color: lightgrey;`}
 
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1.5px solid lightgrey;
+	border-radius: 3px;
+	overflow: hidden; /* required for border-radius work */
+
 	thead {
 		background-color: ${(props) =>
 			props.disabled
 				? "lightgrey"
-				: props.headingBackgroundColor || "#d7d7d7"};
+				: props.headingBackgroundColor || "#b5d5e5"};
 	}
+
 	td,
 	th {
 		padding: 10px;
-		border: 2px solid black;
+		border-right: 1.5px solid lightgrey;
+		border-bottom: 1.5px solid lightgrey;
 	}
 
-	border-collapse: collapse;
-	padding: 10px;
+	/* remove borders on the far right and bottom edges */
+	tfoot tr:last-child td {
+		border-bottom: none;
+	}
+	td:last-child,
+	th:last-child {
+		border-right: none;
+	}
 
 	@media (max-width: 768px) {
 		padding: 5px;
