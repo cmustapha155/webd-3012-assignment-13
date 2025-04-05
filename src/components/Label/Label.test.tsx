@@ -18,7 +18,13 @@ describe(Label, () => {
 
 	// test 2
 	test("Label styling changes in disabled state", () => {
-		render(<Label text="Label text disabled" htmlFor="input-field" disabled={true} />);
+		render(
+			<Label
+				text="Label text disabled"
+				htmlFor="input-field"
+				disabled={true}
+			/>,
+		);
 		render(<input id="input-field" />);
 
 		const label = screen.getByText("Label text disabled");
