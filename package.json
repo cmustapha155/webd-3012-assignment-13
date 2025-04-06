@@ -1,10 +1,10 @@
 {
   "name": "ui-garden-f",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsup",
     "format": "prettier --write --parser typescript 'src/**/*.{ts,tsx}'",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "storybook": "storybook dev -p 6006",
@@ -43,17 +43,16 @@
     "prettier": "^3.5.3",
     "storybook": "^8.6.4",
     "styled-components": "^6.1.15",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "type": "module",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ]
+  "files": ["dist"]
 }
