@@ -1,6 +1,6 @@
 {
   "name": "ui-garden-f",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -48,8 +48,8 @@
     "typescript-eslint": "^8.28.0"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "type": "module",
   "module": "dist/index.es.js",
