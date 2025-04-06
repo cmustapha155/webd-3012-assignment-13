@@ -8,7 +8,7 @@ const StyledCard = styled.div<CardProps>`
 	text-align: ${(props) => props.align || "left"};
 
 	border: 1.5px solid lightgrey;
-	border-top: 5px solid  ${(props) => props.accentColor || "#3284ad"};
+	border-top: 5px solid ${(props) => props.accentColor || "#3284ad"};
 	border-radius: 3px;
 	padding: 20px;
 	width: 25%;
@@ -19,7 +19,7 @@ const StyledCard = styled.div<CardProps>`
 		height: 200px;
 		border-radius: 3px;
 		object-fit: cover;
-		opacity: ${(props) => props.disabled ? "0.3" : "1.0"};
+		opacity: ${(props) => (props.disabled ? "0.3" : "1.0")};
 	}
 
 	color: ${(props) =>
@@ -44,9 +44,9 @@ const Card: React.FC<CardProps> = (props) => {
 			className={props.className}
 			id={props.id}
 			disabled={props.disabled}
-			role = "card" // DEFINE ROLE FOR TESTING
+			role="card" // DEFINE ROLE FOR TESTING
 		>
-			<img alt="card image" src={props.imageSrc}/>
+			<img alt="card image" src={props.imageSrc} />
 			<h3>{props.heading}</h3>
 			<p>{props.description}</p>
 		</StyledCard>

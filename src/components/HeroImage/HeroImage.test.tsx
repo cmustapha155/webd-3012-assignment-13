@@ -4,7 +4,6 @@ import "@testing-library/jest-dom";
 import HeroImage from "./HeroImage";
 
 describe(HeroImage, () => {
-
 	// Note: tests generate warnings due to mapping of non existent html attributes (which the component requires) to the corresponding html element
 
 	// test 1
