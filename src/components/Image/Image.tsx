@@ -11,9 +11,9 @@ const StyledImage = styled.img<ImageProps>`
 		max-width: ${(props) => props.smallScreenMaxWidth || "75%"};
 	}
 
-  ${(props) =>
-    props.disabled &&
-    `
+	${(props) =>
+		props.disabled &&
+		`
       opacity: 0.3;
       pointer-events: none;
       cursor: not-allowed;
@@ -21,18 +21,17 @@ const StyledImage = styled.img<ImageProps>`
 `;
 
 const Image: React.FC<ImageProps> = (props) => {
-  return (
-    <StyledImage
-    alt={props.alt}
-    src={props.src}
-    maxWidth={props.maxWidth}
-    smallScreenMaxWidth={props.smallScreenMaxWidth}
-    className={props.className}
-    id={props.id}
-    disabled={props.disabled}
-    >
-    </StyledImage>
-  );
+	return (
+		<StyledImage
+			alt={props.alt}
+			src={props.src}
+			maxWidth={props.maxWidth}
+			smallScreenMaxWidth={props.smallScreenMaxWidth}
+			className={props.className}
+			id={props.id}
+			disabled={props.disabled}
+		></StyledImage>
+	);
 };
 
 export default Image;

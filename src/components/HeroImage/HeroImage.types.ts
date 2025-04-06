@@ -1,15 +1,15 @@
 export interface HeroImageProps {
-  imageAlt: string;
-  imageSrc: string;
-  imageBrightness?: number;
+	imageAlt: string;
+	imageSrc: string;
+	imageBrightness?: number;
 
-  heading?: string;
-  subheading?: string;
-  textColor?: string;
+	heading?: string;
+	subheading?: string;
+	textColor?: string;
 
-  buttonText?: string;
+	buttonText?: string;
 
-  className?: string;
-  id?: string;
+	className?: string;
+	id?: string;
 	disabled?: boolean;
 }

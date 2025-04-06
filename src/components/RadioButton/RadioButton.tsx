@@ -8,29 +8,29 @@ const StyledRadioButton = styled.input<RadioButtonProps>`
 	margin: 10px;
 
 	@media (max-width: 768px) {
-    margin: 15px;
+		margin: 15px;
 	}
 
 	&:hover {
 		cursor: ${(props) => !props.disabled && "pointer"};
 	}
-  &:checked {
-    accent-color: ${(props) => props.buttonColor || "#3284ad"};
-  }
+	&:checked {
+		accent-color: ${(props) => props.buttonColor || "#3284ad"};
+	}
 `;
 
 const RadioButton: React.FC<RadioButtonProps> = (props) => {
-  return (
-    <StyledRadioButton type="radio"
-    name = {props.name}
-    value = {props.value}
-    buttonColor = {props.buttonColor}
-    disabled = {props.disabled}
-    className= {props.className}
-    id= {props.id}
-    >
-    </StyledRadioButton>
-  );
+	return (
+		<StyledRadioButton
+			type="radio"
+			name={props.name}
+			value={props.value}
+			buttonColor={props.buttonColor}
+			disabled={props.disabled}
+			className={props.className}
+			id={props.id}
+		></StyledRadioButton>
+	);
 };
 
 export default RadioButton;
